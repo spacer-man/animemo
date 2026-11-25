@@ -13,6 +13,7 @@ dependencies = [
     "msgspec>=0.22.0",
     "msgspec-ext>=0.5.1",
     "sqlalchemy[asyncio]>=2.1.9",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
