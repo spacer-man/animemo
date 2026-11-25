@@ -12,7 +12,7 @@ class User(Base):
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(VARCHAR(32))
+    username: Mapped[str] = mapped_column(VARCHAR(32), unique=True)
 
 
 class AnimeTitle(Base):
