@@ -7,8 +7,14 @@ class DBConfig(msgspec.Struct):
     echo: bool = False
 
 
+class ServerConfig(msgspec.Struct, frozen=True):
+    host: str = "127.0.0.1"
+    port: int = 8081
+
+
 class Config(BaseSettings):
     db: DBConfig
+    server: ServerConfig = ServerConfig()
 
     model_config = SettingsConfigDict(
         env_file=".env",
