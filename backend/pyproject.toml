@@ -7,7 +7,12 @@ authors = [
     { name = "spacer-man", email = "138325192+spacer-man@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "asyncpg>=0.32.0",
+    "msgspec>=0.22.0",
+    "msgspec-ext>=0.5.1",
+    "sqlalchemy>=2.1.9",
+]
 
 [project.scripts]
 animemo = "animemo:main"
@@ -15,3 +20,8 @@ animemo = "animemo:main"
 [build-system]
 requires = ["uv_build>=0.13.9,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "alembic>=1.20.1",
+]
