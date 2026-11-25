@@ -1,6 +1,6 @@
 <div align="center">
 
-![Logo](/logo.png) 
+<img src="/logo.png" width="200" alt="animemo logo">
 
 # animemo
 
