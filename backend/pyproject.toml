@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.14"
 dependencies = [
     "asyncpg>=0.32.0",
+    "litestar>=2.25.0",
     "msgspec>=0.22.0",
     "msgspec-ext>=0.5.1",
     "sqlalchemy[asyncio]>=2.1.9",
