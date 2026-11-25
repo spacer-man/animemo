@@ -9,7 +9,7 @@ from sqlalchemy.ext.asyncio import (
     create_async_engine,
 )
 
-from config import Config
+from animemo.config import Config
 
 
 @lru_cache
