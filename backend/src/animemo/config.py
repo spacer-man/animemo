@@ -2,7 +2,7 @@ import msgspec
 from msgspec_ext import BaseSettings, SecretStr, SettingsConfigDict
 
 
-class DBConfig(msgspec.Struct):
+class DBConfig(msgspec.Struct, frozen=True):
     url: SecretStr
     echo: bool = False
 
