@@ -23,5 +23,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "aiosqlite>=0.22.1",
     "alembic>=1.20.1",
+    "ruff>=0.17.6",
 ]
